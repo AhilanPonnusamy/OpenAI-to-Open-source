@@ -15,20 +15,20 @@ A simple RAG POC that shows how to use vLLM to move from OpenAI GPT-4 LLM to IBM
      python3 -m venv .venv
 ```
 
-4. Activate the vitual environment
+5. Activate the vitual environment
 
 ```
     source .venv/bin/activate
 ```
 
 
-5. Install dependencies
+6. Install dependencies
 
 ```
     pip install -r requirements.txt
 ```
 
-6. Add your OpenAI API Key to **OPENAI_API_KEY** variable in **.env** file. You can create OpenAI API Key at **https://platform.openai.com/api-keys**
+7. Add your OpenAI API Key to **OPENAI_API_KEY** variable in **.env** file. You can create OpenAI API Key at **https://platform.openai.com/api-keys**
 
 ## Testing OpenAI GPT-4 LLM and OpenAI Embeddings 
 
@@ -49,8 +49,23 @@ A simple RAG POC that shows how to use vLLM to move from OpenAI GPT-4 LLM to IBM
 1. **chatbot_ui_granite.py** contains all changes required for IBM Granite and all-MiniLM-L6-v2 Embedding model integration.
 
 2. Setup InstructLab following the instruction up to **Initializing InstructLab and a Taxonomy project** section from **https://developers.redhat.com/blog/2024/06/12/getting-started-instructlab-generative-ai-model-tuning#**.  
-3. 
-4. 
-5. 
+3. Download Granite-7b-instruct GGUF model from **https://huggingface.co/QuantFactory/granite-7b-instruct-GGUF/tree/main** and move it to models folders. For this POC I used **granite-7b-instruct.Q4_K_M.gguf** model.
+4. Update the **model_path** under **serve** in **config.yaml** to use the downloaded granite model as shown below
+   ```
+      model_path: models/granite-7b-instruct.Q4_K_M.gguf
+   ```
+5. Serve the model
+   ```
+      ilab model serve
+   ```
+6. In a new terminal start the RAG demo with Granite model in the virtual environment.
+   ```
+       streamlit run chatbot_ui_granite.py
+   ``` 
+7. 
+8. 
+9. 
+10. 
+11.  
 
 ***Have fun!!!!!***
