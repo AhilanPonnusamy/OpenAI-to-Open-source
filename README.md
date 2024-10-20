@@ -28,7 +28,12 @@ A simple RAG POC that shows how to use vLLM to move from OpenAI GPT-4 LLM to IBM
     pip install -r requirements.txt
 ```
 
-4. Try various prompts from the main folder README file. You will see the responses are much more aligned with the context with less hallucination and warning messages.
->![App UI](../images/Finetuned-output.png)  
+6. Add your OpenAI API Key to **OPENAI_API_KEY** variable in **.env** file. You can create OpenAI API Key at **https://platform.openai.com/api-keys**
+   
+7. Run OpenAI chatbot App
+
+```
+    streamlit run chatbot_ui.py
+```
    
 ***Have fun!!!!!***
