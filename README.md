@@ -35,5 +35,8 @@ A simple RAG POC that shows how to use vLLM to move from OpenAI GPT-4 LLM to IBM
 ```
     streamlit run chatbot_ui.py
 ```
+
+8. Try a random question **what is the origin of ML?**. Once submitted, you will see some activity in streamlit console and in about 20 seconds a generic LLM response is dislayed in the UI as shown below.
+![App UI](./images/RandomWithoutRAG.jpg)
    
 ***Have fun!!!!!***
