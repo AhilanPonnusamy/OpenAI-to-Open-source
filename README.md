@@ -58,14 +58,12 @@ A simple RAG POC that shows how to use vLLM to move from OpenAI GPT-4 LLM to IBM
    ```
       ilab model serve
    ```
-6. In a new terminal start the RAG demo with Granite model in the virtual environment.
+6. In a new terminal start the RAG demo with Granite model in the configured virtual environment.
    ```
        streamlit run chatbot_ui_granite.py
    ``` 
-7. 
-8. 
-9. 
-10. 
-11.  
+7. Upload the PDF file of choice and intereact with it as before. The UI will also display the generated prompt for your reference as shown below.
+![App UI](./images/GraniteWithRAG.png)
+ 
 
 ***Have fun!!!!!***
