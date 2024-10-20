@@ -44,4 +44,13 @@ A simple RAG POC that shows how to use vLLM to move from OpenAI GPT-4 LLM to IBM
 3. Upload a PDF file (you may also try MLbasics.pdf provided in this project). Wait for the file to be uploaded and embeddings created and stored in the vector DB. Try a random question with the information provided in the uploaded file ** e.g., **what is a loss function?**. You will see a relevant response displayed on the screen as shown below.
 ![App UI](./images/GPT4-with-RAG.png)
    
+## Testing with Open source IBM Granite and all-MiniLM-L6-v2 Embeddings 
+
+1. **chatbot_ui_granite.py** contains all changes required for IBM Granite and all-MiniLM-L6-v2 Embedding model integration.
+
+2. Setup InstructLab following the instruction up to **Initializing InstructLab and a Taxonomy project** section from **https://developers.redhat.com/blog/2024/06/12/getting-started-instructlab-generative-ai-model-tuning#**.  
+3. 
+4. 
+5. 
+
 ***Have fun!!!!!***
