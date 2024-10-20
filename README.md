@@ -1,5 +1,5 @@
 # OpenAI-to-Open-source
-A simple RAG POC that shows how to use vLLM to move from OpenAI GPT-4 LLM to IBM Granite instruct model. 
+A simple RAG POC that shows how to use vLLM to move from OpenAI GPT-4 LLM to IBM Granite instruct model.This example uses Chroma as the database for storing embeddings of a PDF file and LangChain as the framework for Retrieval-Augmented Generation (RAG).
 
 1. Install Python 3.8 or higher
 2. Download this code repository (install git if it is not already setup, You can also downlod the zip file directly from the main page under code option as an alternate)
