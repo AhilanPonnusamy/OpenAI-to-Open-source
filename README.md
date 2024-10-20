@@ -29,14 +29,19 @@ A simple RAG POC that shows how to use vLLM to move from OpenAI GPT-4 LLM to IBM
 ```
 
 6. Add your OpenAI API Key to **OPENAI_API_KEY** variable in **.env** file. You can create OpenAI API Key at **https://platform.openai.com/api-keys**
-   
-7. Run OpenAI chatbot App
+
+## Testing OpenAI GPT-4 LLM and OpenAI Embeddings 
+
+1. Run OpenAI chatbot App
 
 ```
     streamlit run chatbot_ui.py
 ```
 
-8. Try a random question **what is the origin of ML?**. Once submitted, you will see some activity in streamlit console and in about 20 seconds a generic LLM response is dislayed in the UI as shown below.
+2. Try a random question **what is the origin of ML?**. Once submitted, you will see some activity in streamlit console and in about 20 seconds a generic LLM response is dislayed in the UI as shown below.
 ![App UI](./images/RandomWithoutRAG.png)
+
+3. Upload a PDF file (you may also try MLbasics.pdf provided in this project). Wait for the file to be uploaded and embeddings created and stored in the vector DB. Try a random question with the information provided in the uploaded file ** e.g., **what is a loss function?**. You will see a relevant response displayed on the screen as shown below.
+![App UI](./images/GPT4-with-RAG.png)
    
 ***Have fun!!!!!***
