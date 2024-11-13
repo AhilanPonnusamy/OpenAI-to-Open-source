@@ -1,0 +1,91 @@
+version: 3
+domain: summarization
+created_by: Ahilan Ponnusamy
+seed_examples:
+  - context: |
+      A loss function with favorable statistical properties might have high computational complexity in machine learning (ML). Conversely, computationally efficient loss functions may lack interpretability. The choice of a loss function influences ML model outcomes and impacts the discrepancy between true and predicted labels.
+    questions_and_answers:
+      - question: |
+          What are the advantages and disadvantages of a loss function with favorable statistical properties?
+        answer: |
+          While statistically favorable loss functions can improve prediction quality, they may involve high computational complexity, impacting model efficiency.
+      - question: |
+          Why might computationally efficient loss functions be challenging to interpret?
+        answer: |
+          They prioritize performance speed, sometimes at the expense of intuitiveness, making it harder to understand their impact on predictions.
+      - question: |
+          What is the role of a loss function in ML?
+        answer: |
+          A loss function measures the discrepancy between the true and predicted labels, guiding the ML model to minimize prediction errors.
+
+  - context: |
+      Information theory studies the problem of communication over noisy channels. Its objectives include conditions for reliable communication and designing efficient transmitter and receiver methods. It also provides analysis tools for machine learning models.
+    questions_and_answers:
+      - question: |
+          What does information theory study?
+        answer: |
+          Information theory studies the communication process over noisy channels, aiming for near error-free transmission and efficient system design.
+      - question: |
+          How does information theory apply to machine learning?
+        answer: |
+          Information theory concepts help in analyzing and designing machine learning methods, such as those aimed at explainability.
+      - question: |
+          What are the two main goals of information theory?
+        answer: |
+          The main goals are to enable reliable communication with minimal errors and to design efficient transmitter and receiver methods.
+
+  - context: |
+      Machine learning combines three core components: data, a model, and a loss function. Data consists of individual data points, a model represents hypothesis spaces, and a loss function measures hypothesis accuracy.
+    questions_and_answers:
+      - question: |
+          What are the three main components of machine learning?
+        answer: |
+          Data, models, and loss functions form the foundation of machine learning. Data points provide features and labels, the model predicts labels, and the loss function assesses prediction quality.
+      - question: |
+          How does the loss function influence ML models?
+        answer: |
+          The loss function guides the model to minimize prediction errors by quantifying discrepancies between actual and predicted labels.
+      - question: |
+          What role does data play in ML?
+        answer: |
+          Data serves as the foundation, with individual data points characterized by features and labels that guide model predictions.
+
+  - context: |
+      Regularization is a technique to prevent overfitting in ML models by introducing a penalty for more complex models. Common regularization methods include L1 and L2 regularization, which control the magnitude of model parameters.
+    questions_and_answers:
+      - question: |
+          What is regularization?
+        answer: |
+          Regularization is a technique in ML that prevents overfitting by penalizing complex models, encouraging simpler model structures.
+      - question: |
+          Why is regularization important?
+        answer: |
+          It helps ML models generalize better by reducing the risk of overfitting, allowing the model to perform well on new, unseen data.
+      - question: |
+          What is the difference between L1 and L2 regularization?
+        answer: |
+          L1 regularization penalizes the absolute values of parameters, encouraging sparsity, while L2 regularization penalizes the square of parameters, discouraging large parameter values.
+
+  - context: |
+      In supervised learning, models are trained on labeled data to make predictions. The training data includes inputs and correct outputs, allowing the model to learn relationships and generalize to unseen data.
+    questions_and_answers:
+      - question: |
+          What is supervised learning?
+        answer: |
+          Supervised learning is an ML approach where models learn from labeled data, mapping inputs to known outputs to make predictions.
+      - question: |
+          How does labeled data impact supervised learning?
+        answer: |
+          Labeled data provides the model with the correct answers, allowing it to learn and generalize patterns for prediction on new data.
+      - question: |
+          Why is supervised learning important in ML?
+        answer: |
+          It enables models to learn directly from examples, making it effective for tasks where labeled data is available, like image classification and language translation.
+
+document_outline: |
+  Examples illustrating key machine learning concepts.
+document:
+  repo: https://github.com/AhilanPonnusamy/OpenAI-to-Open-source.git
+  commit: dc04e7499f1a8d0c263f18beeab5b8c522810a27
+  patterns:
+    - data.md
