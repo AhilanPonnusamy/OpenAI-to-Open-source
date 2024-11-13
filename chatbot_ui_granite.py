@@ -16,7 +16,11 @@ llm = VLLMOpenAI(
     openai_api_key="EMPTY",  # API key set to EMPTY as vLLM doesn't require one
     openai_api_base="http://localhost:8000/v1",  # Your local vLLM endpoint
     model_name="ibm/granite-7b-instruct",  # Adjust the model name as needed
-    model_kwargs={"stop": ["."]}
+    model_kwargs={
+        "temperature": 0.3,  # Lower temperature for more deterministic output
+        "max_tokens": 300,   # Adjust as needed for summary length
+        "stop": ["."]
+    }
 )
 
 # Streamlit UI for file upload
@@ -72,7 +76,9 @@ if user_query:
     if retriever:  # Check if the retriever is defined (i.e., document uploaded)
         # Retrieve relevant context using RAG
         context_documents = retriever.get_relevant_documents(user_query)
-        context = "\n\n".join(doc.page_content for doc in context_documents)
+        #context = "\n\n".join(doc.page_content for doc in context_documents)
+        # Removed duplicates
+        context = list(dict.fromkeys(doc.page_content for doc in context_documents))
 
         # Define a structured and enhanced prompt following the required format
         prompt = (
